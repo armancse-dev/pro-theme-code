@@ -73,6 +73,23 @@ function an_customizer_register($wp_customize){
         )
     ));
 
+    // Footer Option
+  $wp_customize->add_section('an_footer_option', array(
+    'title' => __('Footer Option', 'procode'),
+    'description' => 'If you interested to change or update your footer settings you can do it.'
+  ));
+
+  $wp_customize->add_setting('an_copyright_section', array(
+    'default' => '&copy; Copyright 2023 | Procode',
+  ));
+
+  $wp_customize-> add_control('an_copyright_section', array(
+    'label' => 'Copyright Text',
+    'description' => 'If need you can update your copyright text from here',
+    'setting' => 'an_copyright_section',
+    'section' => 'an_footer_option',
+  ));
+
 }
 add_action('customize_register','an_customizer_register');
 
