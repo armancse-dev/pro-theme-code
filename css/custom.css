@@ -20,6 +20,17 @@ body {
  /*=======================================
   Header Area Style
  ========================================*/
+ #notice {
+  background: #ff6b6b;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#notice h2 {
+  margin: 0;
+}
+ 
  #header_area {
    padding: 15px 0;
  }
