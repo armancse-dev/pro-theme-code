@@ -57,5 +57,40 @@ function an_customizer_register($wp_customize){
    'section' => 'an_footer_option',
  ));
 
+ //Theme Color
+ $wp_customize->add_section('an_color', array(
+  'title' => __('Theme Color', 'procode'),
+  'description' => 'If you need you can change the theme color',
+ ));
+
+ $wp_customize-> add_setting('an_bg_color', array(
+  'default' => '#ffffff',
+  ));
+
+  $wp_customize-> add_control(new WP_Customize_Color_Control($wp_customize, 'an_bg_color', array(
+    'label' => 'Background Color',
+    'section' => 'an_color',
+    'settings' => 'an_bg_color'
+  )));
+ $wp_customize-> add_setting('an_primary_color', array(
+  'default' => '#ea1a70',
+  ));
+
+  $wp_customize-> add_control(new WP_Customize_Color_Control($wp_customize, 'an_primary_color', array(
+    'label' => 'Primary Color',
+    'section' => 'an_color',
+    'settings' => 'an_primary_color'
+  )));
+
 }
 add_action('customize_register','an_customizer_register');
+
+function an_theme_color_cus(){
+  ?>
+    <style>
+      body{ background: <?php echo get_theme_mod('an_bg_color'); ?> }
+      :root{--pink: <?php echo get_theme_mod('an_primary_color'); ?>}
+    </style>
+  <?php
+}
+add_action('wp_head', 'an_theme_color_cus');
