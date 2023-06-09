@@ -9,6 +9,9 @@ include_once('inc/default.php');
 //Theme CSS and  JQuery file include
 include_once('inc/enqueue.php');
 
+//Theme Custom Post
+include_once('inc/custom_post.php');
+
 //Theme Function
 include_once('inc/theme_function.php');
 
