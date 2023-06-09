@@ -25,6 +25,7 @@ p {
  }
  img {
    max-width: 100%;
+   height: auto;
  }
 
  a.redmore,
@@ -560,4 +561,19 @@ p {
 }
 .comment-form .comment-form-cookies-consent label {
   display: inline;
+}
+
+/*Theme Service area styling*/
+#service_area {
+  padding: 45px 0;
+}
+#service_area .child_service {
+  background: #ddd;
+  box-shadow: 0 0 10px #ddd;
+  padding: 15px;
+  border-radius: 15px;
+}
+#service_area .child_service img {
+  width: 100%;
+  margin: 0 0 15px;
 }
