@@ -3,4 +3,9 @@ jQuery(document).ready(function () {
      mode: 'fade',
      captions: true,
    });
+
+   jQuery("#owl-slider").owlCarousel({
+    autoplay: true,
+    items:1,
+  });
  });
