@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying pages
+ * The template for displaying psts
  */
     get_header();
 ?>
@@ -14,7 +14,7 @@
                     <?php if(comments_open()) : ?>
                      <?php comments_template(); ?>
 
-                     <?php endif(); ?>
+                     <?php endif; ?>
                   </div>
                    
                 </div>
@@ -24,5 +24,12 @@
             </div>
         </div>
     </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 style="color: red">Template: Singple.php</h3>
+            </div>
+        </div>
+    </div>
 
 <?php get_footer(); ?>
