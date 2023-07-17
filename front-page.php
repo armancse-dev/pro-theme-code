@@ -25,7 +25,7 @@ get_header(); ?>
     </div>
   </section>
 
-  <section id="slider_area">
+  <!-- <section id="slider_area">
     <div id="owl-slider" class="owl-carousel owl-theme">
       <?php 
         query_posts('post_type=slider&post_status=publish&posts_per_page=3&order=ASC&paged='. get_query_var('post')); 
@@ -42,7 +42,17 @@ get_header(); ?>
           endif;
       ?>
     </div>
-  </section>
+  </section> -->
+
+  <div id="homepage_post">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <?php dynamic_sidebar( 'home-1'); ?>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section id="service_area">
     <div class="container">

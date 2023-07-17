@@ -213,6 +213,11 @@ p {
 #body_area .post_details {
   width: 100%;
 }
+#body_area .post_details p span{
+  display: inline-block;
+  margin: 0 5px;
+}
+
 #body_area .post_details div {
   width: 100% !important;
 }
@@ -400,6 +405,27 @@ p {
   background: #262626;
 }
 
+/*===========================================
+  Homepage category Styling
+===========================================*/
+#homepage_post .child_home ul {
+  text-align: center;
+}
+#homepage_post .child_home ul li {
+  display: inline-block;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px #ddd;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+#homepage_post .child_home ul li a {
+  font-size: 25px;
+  color: #262626;
+  display: block;
+  margin: 15px 0;
+  text-decoration: none;
+}
 
  /*===========================================
   Footer Area Styling
