@@ -24,7 +24,7 @@
               </div>
           <?php endwhile;
             else :
-              _e('No post found');
+              _e('No post found', 'procode');
             endif; ?>
           <div id="page_nav">
             <?php if ('ali_pagenav') {ali_pagenav(); } else{ ?>

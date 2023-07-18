@@ -18,6 +18,7 @@ add_action('after_setup_theme', 'my_theme_setup');
 //Excerpt to 40 word
 
 function an_excerpt_more($more){
+  global $post;
    return '<br> <br> <a class="redmore" href="'.get_permalink( $post->ID) . '">' . 'Read More' . '</a>';
  }
  add_filter('excerpt_more', 'an_excerpt_more');

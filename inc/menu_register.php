@@ -4,7 +4,7 @@ register_nav_menu( 'main_menu', __('Main Menu', 'alihossain') );
 // Walker Menu Properties
 function ali_nav_description( $item_output, $item, $args){
     if( !empty ($item->description)){
-      $item_output = str_replace($args->link_after . '</a>', '<span class="walker_nav">' . $item->description . '</span>' . $args->link_after . '</a>', $item_output);
+      $item_output = str_replace('</a>', '<span class="walker_nav">' . $item->description . '</span>' . '</a>', $item_output);
     }
     return $item_output;
   }
