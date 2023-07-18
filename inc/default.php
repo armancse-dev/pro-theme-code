@@ -2,12 +2,19 @@
 //Theme Title
 add_theme_support('title-tag');
 
+
 // Thumbnail Image Area
 add_theme_support('post-thumbnails', array('page','post','service'));
 add_image_size( 'service',1920, 700, true );
 add_image_size( 'service',400, 200, true );
 add_image_size( 'post-thumbnails',970, 400, true );
 
+function my_theme_setup(){
+  add_theme_support('post-thumbnails');
+  add_theme_support('post-formats' ,[ 'aside', 'gallery','audio', 'video']);
+}
+
+add_action('after_setup_theme', 'my_theme_setup');
 //Excerpt to 40 word
 
 function an_excerpt_more($more){

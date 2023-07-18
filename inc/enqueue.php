@@ -32,3 +32,10 @@ function pro_add_google_fonts(){
    wp_enqueue_style('pro_google_fonts', 'https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap', false);
  }
  add_action('wp_enqueue_scripts', 'pro_add_google_fonts');
+
+ 
+ // Dashicon Not showing fixing
+ function dashicons_load(){
+   wp_enqueue_style('dashicons');
+  }
+  add_action('wp_enqueue_scripts', 'dashicons_load');
