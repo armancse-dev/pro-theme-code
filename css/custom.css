@@ -52,6 +52,9 @@ p {
   display: inline-block;
   text-decoration: none;
 }
+.slicknav_menu{
+  display: none;
+}
  /*=======================================
   Header Area Style
  ========================================*/

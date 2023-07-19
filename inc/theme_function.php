@@ -88,8 +88,8 @@ add_action('customize_register','an_customizer_register');
 function an_theme_color_cus(){
   ?>
     <style>
-      body{ background: <?php echo esc_attr($an_bg_color); ?> }
-      :root{--pink: <?php echo esc_attr($an_primary_color); ?>}
+      body{ background: <?php echo get_theme_mod("an_bg_color"); ?> }
+      :root{--pink: <?php echo get_theme_mod("an_primary_color"); ?>}
     </style>
   <?php
 }
