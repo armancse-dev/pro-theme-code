@@ -4,6 +4,9 @@
 :root{
   --pink: #ea1a70;
 }
+body.login{
+  
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;

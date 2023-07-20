@@ -23,3 +23,6 @@ include_once('inc/widget_register.php');
 
 // Shortcode Regiser
 include_once('inc/shortcode.php');
+
+// Login Enqueue Resiter
+include_once('inc/login-enqueue.php');
