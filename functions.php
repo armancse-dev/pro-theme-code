@@ -26,3 +26,6 @@ include_once('inc/shortcode.php');
 
 // Login Enqueue Resiter
 include_once('inc/login-enqueue.php');
+
+// Custom Theme Option
+include_once('inc/theme-option/admin_theme_option.php');
